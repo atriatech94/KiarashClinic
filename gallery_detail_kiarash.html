@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Untitled Document</title>
+<link type="text/css" rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" >
+<link type="text/css" rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/font-awesome.min.css" >
+<link rel="stylesheet" href="swipe/css/photoswipe.css">
+<link rel="stylesheet" href="swipe/css/default-skin/default-skin.css">
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+<script src="swipe/js/photoswipe.min.js"></script>
+<script src="swipe/js/ui/photoswipe-ui-default.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/_ezswipe.js"></script>
+<script type="text/javascript">
+var flag = 0 ; 
+</script>
+</head>
+<body onload="onLoad();">
+
+    <div  data-role="page" class="_ezswipe" id="gallery_detail" >
+      <div data-position="fixed" data-role="header" data-theme="b">
+        <h1 class="head_tt fa fa-picture-o"><span>کلینیک دکتر قاسمی</span></h1>
+        <a href="#right-panel" data-icon="bars" id="menu_icon" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon ui-btn-right">Open right panel</a> </div>
+      <!-- /header -->
+      <div role="main" class="ui-content">
+        <ul class="logo_name">
+          <li class="logo1"><img src="img/logo-color.png"></li>
+          <li class="logo2"><img src="img/logo-name.png"></li>
+        </ul>
+        <div class="content clear"><br>
+
+          
+          <div class="my-simple-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="img/gallery/clinic/1.jpg" itemprop="contentUrl"  data-size="800x533">
+            <img src="img/gallery/clinic/1.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+              <figcaption itemprop="caption description">محیط کلینیک</figcaption>
+            </figure>
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="img/gallery/clinic/2.jpg" itemprop="contentUrl" data-size="800x536">
+            <img src="img/gallery/clinic/2.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+              <figcaption itemprop="caption description">محیط کلینیک</figcaption>
+            </figure>
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="img/gallery/clinic/3.jpg" itemprop="contentUrl" data-size="533x800">
+                <img src="img/gallery/clinic/3.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+              <figcaption itemprop="caption description">محیط کلینیک</figcaption>
+            </figure>
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                 <a href="img/gallery/clinic/4.jpg" itemprop="contentUrl" data-size="800x534">
+                 <img src="img/gallery/clinic/4.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+              <figcaption itemprop="caption description">محیط کلینیک</figcaption>
+            </figure>
+             <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="img/gallery/clinic/5.jpg" itemprop="contentUrl" data-size="800x494">
+            <img src="img/gallery/clinic/5.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+              <figcaption itemprop="caption description">محیط کلینیک</figcaption>
+            </figure>
+             <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="img/gallery/clinic/6.jpg" itemprop="contentUrl" data-size="800x533">
+            <img src="img/gallery/clinic/6.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+              <figcaption itemprop="caption description">محیط کلینیک</figcaption>
+            </figure>
+             <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="img/gallery/clinic/7.jpg" itemprop="contentUrl" data-size="533x800">
+            <img src="img/gallery/clinic/7.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+              <figcaption itemprop="caption description">محیط کلینیک</figcaption>
+            </figure>
+             <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="img/gallery/clinic/8.jpg" itemprop="contentUrl" data-size="800x534">
+            <img src="img/gallery/clinic/8.jpg" itemprop="thumbnail" alt="Image description" />
+            </a>
+              <figcaption itemprop="caption description">محیط کلینیک</figcaption>
+            </figure>
+          </div>
+
+
+          <!-- /ui-content --> 
+        </div>
+        <!-- /content --> 
+      </div>
+      <!-- /ui-content -->
+      <div data-role="panel" id="right-panel" data-display="push" pn="panel" data-position="right" data-theme="b">
+        <div class="logo_menu">
+          <div id="card"><img src="img/logo-white.png"></div>
+			<h3>DR.GHASEMI</h3>
+           <h3> CLINIC</h3>
+        </div>
+        <ul class="navbar">
+          <li><a href="index.html"        ><i class="fa fa-tachometer"></i>کلینیک دکتر قاسمی</a></li>
+          <li><a href="blog.html"  	     ><i class="fa fa-newspaper-o"></i>آخرین مطالب</a></li>
+          <li><a href="service.html"      ><i class="fa fa-newspaper-o"></i>سرویس های کلینیک</a></li>
+          <li><a href="callery.html"      ><i class="fa fa-sort-numeric-asc"></i>لیپوماتیک</a></li>
+          <li><a href="gallery.html"   data-ajax="false"      class="active"><i class="fa fa-picture-o"></i>گالری تصاویر</a></li>
+          <li><a href="faq.html"  	      ><i class="fa fa-recycle"></i>نکات قبل و بعد عمل</a></li>
+          <li><a href="about_us.html"     ><i class="fa fa-question"></i>درباره ما</a></li> 
+          <li><a href="contact_us.html"    ><i class="fa fa-comments"></i>تماس با ما</a></li> 
+         <li><a href="#" onclick="exitFromApp()"   data-ajax="false"  ><i class="fa fa-power-off"></i>خروج</a></li>
+        </ul>
+      </div>
+      <!-- /panel --> 
+      
+    </div>
+          <!--------------------------------------------------------------------------------------------------------> 
+          <!-- Root element of PhotoSwipe. Must have class pswp. -->
+          <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true"> 
+            
+            <!-- Background of PhotoSwipe. 
+                     It's a separate element, as animating opacity is faster than rgba(). -->
+            <div class="pswp__bg"></div>
+            
+            <!-- Slides wrapper with overflow:hidden. -->
+            <div class="pswp__scroll-wrap"> 
+              
+              <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. --> 
+              <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+              <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+              </div>
+              
+              <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+              <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar"> 
+                  
+                  <!--  Controls are self-explanatory. Order can be changed. -->
+                  
+                  <div class="pswp__counter"></div>
+                  <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                  <button class="pswp__button pswp__button--share" title="Share"></button>
+                  <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                  <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                  
+                  <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR --> 
+                  <!-- element will get class pswp__preloader--active when preloader is running -->
+                  <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                  <div class="pswp__share-tooltip"></div>
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"> </button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"> </button>
+                <div class="pswp__caption">
+                  <div class="pswp__caption__center"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+   <!--------------------------------------------------------------------------------------------------------> 
+
+
+</body>
+
+</html>
+<style>
+
+</style>

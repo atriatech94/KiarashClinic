@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Untitled Document</title>
+<link type="text/css" rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" >
+<link type="text/css" rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/font-awesome.min.css" >
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/_ezswipe.js"></script>
+<script type="text/javascript">
+var flag = 0 ; 
+</script>
+</head>
+<body onload="onLoad();">
+<div  data-role="page" id="contact_us" >
+  <div data-role="header" data-theme="b">
+    <h1 class="head_tt fa fa-comments"><span>تماس با ما</span></h1>
+    <a href="#right-panel" data-icon="bars" id="menu_icon" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon ui-btn-right">Open right panel</a> </div>
+  <!-- /header -->
+  <div role="main" class="ui-content">
+    <ul class="logo_name">
+      <li class="logo1"><img src="img/logo-color.png"></li>
+      <li class="logo2"><img src="img/logo-name.png"></li>
+    </ul>
+    <div class="content clear">
+    <br>
+     <p>شیراز - معالی آباد - نبش کوچه 31 - ساختمان اوتانا2 - طبقه چهارم بانک ایران زمین - واحد 404</p>
+    <p>تلفن : 07136241213 - 07136241314</p>
+        <form id="contact_us" action="http://www.kiarashclinic.com/admin/jason_app/contact_us/" >
+            <label><span>نام و نام خانوادگی </span><input   type="text" name="name" placeholder="نام خود را وارد کنید" /> </label>
+            <label><span>شماره تماس</span><input dir="ltr" type="number" onkeypress="return isNumberKey(event)"  name="tell" placeholder="09*********" /> </label>
+            <label><span>پست الکترونیک  </span><input dir="ltr"  type="email" name="email" placeholder="test@example.com" /> </label>
+            <label><span>متن پیام </span><textarea name="text"  placeholder="متن پیام ..." ></textarea> </label>
+            <label><br/><button type="submit" name="submit">ارسال پیام</button></label>
+        </form>
+      <!-- /ui-content --> 
+    </div>
+   
+    <!-- /content --> 
+  </div>
+  <!-- /ui-content -->
+  <div data-role="panel" id="right-panel" data-display="push" pn="panel" data-position="right" data-theme="b">
+    <div class="logo_menu">
+      <div id="card"><img src="img/logo-white.png"></div>
+      <h3>DR.GHASEMI</h3><h3>CLINIC</h3>
+    </div>
+    <ul class="navbar">
+      <li><a href="index.html"        ><i class="fa fa-tachometer"></i>کلینیک دکتر قاسمی</a></li>
+      <li><a href="blog.html"        ><i class="fa fa-newspaper-o"></i>آخرین مطالب</a></li>
+      <li><a href="service.html"        ><i class="fa fa-newspaper-o"></i>سرویس های کلینیک</a></li>
+      <li><a href="callery.html"       ><i class="fa fa-sort-numeric-asc"></i>لیپوماتیک</a></li>
+      <li><a href="gallery.html"      ><i class="fa fa-picture-o"></i>گالری تصاویر</a></li>
+      <li><a href="faq.html"      ><i class="fa fa-recycle"></i>نکات قبل و بعد عمل</a></li>
+      <li><a href="about_us.html"    ><i class="fa fa-question"></i>درباره ما</a></li> 
+         <li><a href="contact_us.html"  class="active"  ><i class="fa fa-comments"></i>تماس با ما</a></li> 
+     <li><a href="#" onclick="exitFromApp()"   data-ajax="false"  ><i class="fa fa-power-off"></i>خروج</a></li>
+    </ul>
+  </div>
+  <!-- /panel --> 
+  
+</div>
+</body>
+</html>
