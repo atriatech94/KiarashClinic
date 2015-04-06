@@ -280,10 +280,10 @@ function isNumberKey(evt)//???? ?? ready ????
 
          return true;
 }
-$(function(){
+$(document).on( "pageshow", "[contact_us='true']" ,function() {
     
     $('#contact_us').submit(function(event){
-       event.preventDefault;
+       //event.preventDefault;
         /*Form validation*/
         name =  $("input[name='name']").val();
         tell = $("input[name='tell']").val();
