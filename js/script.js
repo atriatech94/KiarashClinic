@@ -289,15 +289,15 @@ $(function(){
         tell =  myTrim($("input[name='tell']").val());
         email = myTrim($("input[name='email']").val());
         text =  myTrim($("textarea[name='text']").val());
-        
       
-        if(name=="" || name === "undefined" || tell=="" || tell === "undefined" || email=="" || email === "undefined" || text=="" || text === "undefined"  )
+        if( name== "" || tell == "" || email == "" || text == "")
         {
+			
             $.mobile.loading( "show", {
                 text: "یک یا چند فیلد خالی است",
                   textVisible: true,theme: 'b',textonly: true,html: "",transtion:"popup"
              });
-           //return false;
+           return false;
         }
 
         if(name.length < 3)
