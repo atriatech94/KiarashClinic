@@ -285,10 +285,10 @@ $(function(){
     $('#contact_us').submit(function(event){
        event.preventDefault;
         /*Form validation*/
-        name =  myTrim($("input[name='name']").val());
-        tell =  myTrim($("input[name='tell']").val());
-        email = myTrim($("input[name='email']").val());
-        text =  myTrim($("textarea[name='text']").val());
+        name =  $("input[name='name']").val();
+        tell = $("input[name='tell']").val();
+        email = $("input[name='email']").val();
+        text =  $("textarea[name='text']").val();
       
         if( name== "" || tell == "" || email == "" || text == "")
         {
