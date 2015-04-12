@@ -2,20 +2,11 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 <title>Untitled Document</title>
 <link type="text/css" rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" >
 <link type="text/css" rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/font-awesome.min.css" >
-<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
-<script type="text/javascript" src="cordova.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
-<script type="text/javascript" src="js/_ezswipe.js"></script>
-<script type="text/javascript">
-var flag = 0 ; 
-</script>
 </head>
 
 <body onload="onLoad();">
@@ -24,6 +15,7 @@ var flag = 0 ;
     <h1 class="head_tt fa fa-newspaper-o"><span>سرویس های کلینیک</span></h1>
     <a href="#right-panel" data-icon="bars" id="menu_icon" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon ui-btn-right">Open right panel</a> </div>
   <!-- /header -->
+  <script type="text/javascript" src="js/livesc.js"></script>  
   <div role="main" class="ui-content">
     <ul class="logo_name">
       <li class="logo1"><img src="img/logo-color.png"></li>
@@ -133,7 +125,7 @@ var flag = 0 ;
                      در پايان، ذكر اين نكته ضرورى است كه بهترين ومؤثرترين روش درمان جاى جوش بويژه اگرعميق باشد؛ تركيبى ازچندروش درمانى و استفاده از روش هاى تكميلى مثل ليزردرمانى ،RF  و گاهى پانچ (punch elevation) و پيلينگ شيميايى و... علاوه برساب سيژن خواهد بود، پس بهتر اين است كه با در نظر داشتن اصل تقدم پيشگيرى بر درمان،تلاش كنيم تا قبل ازاينكه جوش به جوشگاه تبديل شود،آكنه يا جوش را به طورجدى درمان كنيم. 
                     <br>                    
                   </p>
-                  <a href="index.html" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-a">بازگشت</a> </div>
+                  <a href="#" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-a">بازگشت</a> </div>
         </div>
     <!-------------------------------------------------------------------------------------------->
         <!-------------------------------------------------------------------------------------------->
@@ -207,11 +199,19 @@ var flag = 0 ;
                     انتخاب بهترین نوع حجم‌دهنده به بودجه شما، نوع پوست و خاصیت ارتجاعی آن و مشکل مد نظرتان بستگی دارد. در صورتیکه بیمار ترکیبی از خطوط ثابت و پویا را دارد به صورت ترکیبی از تزریق بوتاکس و حجم‌دهنده‌ها برای جوانسازی استفاده می‌شود. انتخاب پزشک با تجربه‌ای که بتواند بهترین درمان را برای شما تشخیص دهد به کسب بهترین نتیجه و پایداری آن کمک می‌کند.
                        <!----------------------------------------------------------------------------------------------------------------------->                 
                 </div></p>
-                  <a href="index.html" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-a">بازگشت</a> </div>
+                  <a href="#" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-a">بازگشت</a> </div>
         </div>
             <style>
+                #micon {
+                    width: 93%;
+                    height: 65vh;
+                    overflow-x: hidden;
+                    overflow-y: auto;
+                    margin: 0 auto;
+
+                }
                 #micon h1{
-                    margin-top: -30px !important;
+                    margin-top: -10px !important;
                     font-size: 20px;
                     color:#ebebeb;
                 }
@@ -229,14 +229,16 @@ var flag = 0 ;
                 font-family:yekan
                 }
                 #dialog1 , #dialog2, #dialog3 , #dialog4, #dialog5 ,#dialog6{
-                    width: 90% !important;
-                    margin: 20px auto !important;
+                    width: 95% !important;
+                    margin: 40px auto !important;
+                    max-height: 80vh;
+					height: auto;
                 }    
                 </style>
     <!-------------------------------------------------------------------------------------------->
   </div>
   <!-- /ui-content -->
-  <div data-role="panel" id="right-panel" data-display="push" pn="panel" data-position="right" data-theme="b">
+  <div data-role="panel" id="right-panel" data-display="overlay" pn="panel" data-position="right" data-theme="b">
     <div class="logo_menu">
       <div id="card"><img src="img/logo-white.png"></div>
 		<h3>DR.GHASEMI</h3>
@@ -258,4 +260,14 @@ var flag = 0 ;
   
 </div>
 </body>
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/hammer.min.js"></script>
+<script type="text/javascript" src="js/jquery.hammer.js"></script>
+<script type="text/javascript">
+var flag = 0 ; 
+</script>
 </html>

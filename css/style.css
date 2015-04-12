@@ -6,8 +6,6 @@
 	Theme URI: http://kiarashclinic.com/
 	Hex-color : #009390 green , #203b84 blue
 */
-
-
 html {
     -ms-touch-action: pan-x;
     touch-action: pan-x;
@@ -16,17 +14,20 @@ body {
     -ms-touch-action: pan-y;
     touch-action: pan-y;
     -ms-content-zooming: none;
+    overflow: hidden;
+    -ms-content-zooming: none;
 }
 
-@font-face {
-	font-family: 'yekan';
-	src: url('../fonts/yekan/BYekan.svg#sadi') format('svg');
-	src: url('../fonts/yekan/BYekan.eot?#iefix') format('embedded-opentype'),   
-         url('../fonts/yekan/BYekan.woff') format('woff'),
-         url('../fonts/yekan/BYekan.ttf') format('truetype'), 
-         url('../fonts/yekan/BYekan.eot');
-	font-weight: 100;
-}
+@font-face{
+		font-family: 'yekan';
+		src:url('../fonts/yekan/BYekan.eot?v=4.2.0');
+		src:url('../fonts/yekan/BYekan.eot?#iefix&v=4.2.0') format('embedded-opentype'),
+		url('../fonts/yekan/BYekan.woff?v=4.2.0') format('woff'),
+		url('../fonts/yekan/BYekan.ttf?v=4.2.0') format('truetype'),
+		url('../fonts/yekan/BYekan.svg?v=4.2.0#fontawesomeregular') format('svg');
+		font-weight:normal;
+		font-style:normal;
+	}
 .ui-page-theme-b a:visited, html .ui-bar-b a:visited, html .ui-body-b a:visited, html body .ui-group-theme-b a:visited {
 	color: inherit;
 }
@@ -44,6 +45,12 @@ ul, menu, dir {
 	-moz-margin-start: 0px!important;
 	-moz-margin-end: 0px!important;
 	*/
+}
+.nav{
+    overflow: hidden;
+}
+.ui-content, .ui-panel-wrapper, .ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper, .ui-content{
+    overflow-y: auto !important;
 }
 #demo-page :not(INPUT):not(TEXTAREA) {
 	-webkit-user-select: none;
@@ -162,21 +169,11 @@ background: transparent !important;
 .links_home a{
     width: 30%;
     display:inline-block;
-    -webkit-transform: scale(1,1);
-    -webkit-transition-timing-function: ease-out;
-    -webkit-transition-duration: 250ms;
-    -moz-transform: scale(1,1);
-    -moz-transition-timing-function: ease-out;
-    -moz-transition-duration: 250ms;
+    
 
 }
 .links_home a:active{
-    -webkit-transform: scale(1.2,1.2) ;
-    -webkit-transition-timing-function: ease-out;
-    -webkit-transition-duration: 250ms;
-    -moz-transform: scale(1.2,1.2) ;
-    -moz-transition-timing-function: ease-out;
-    -moz-transition-duration: 500ms;
+    
     position: relative;
     z-index: 99;
 }
@@ -711,7 +708,7 @@ direction: rtl !important;
 .service_ico .icon a{
     display: block;
     text-decoration: none;
-    color:#203B84;
+    color:#fff;
     text-align: center;
     position: relative;
     top:15%;
@@ -723,33 +720,15 @@ direction: rtl !important;
     margin:0 auto;
     padding: 20px;
     border-radius: 50%;
-    border: solid 1px #203B84;
+    border: solid 1px #fff;
     margin-bottom: 5%;
-    box-shadow: 0px 0px 22px 1px #81A5BE;
 }
 .service_ico .icon span{
     text-align: center;
     padding-top: 10px;
 }
-.service_ico .icon {
-    -webkit-transform: scale(1,1);
-    -webkit-transition-timing-function: ease-out;
-    -webkit-transition-duration: 250ms;
-    -moz-transform: scale(1,1);
-    -moz-transition-timing-function: ease-out;
-    -moz-transition-duration: 250ms;
 
-}
-.service_ico .icon :active{
-    -webkit-transform: scale(1.2,1.2) ;
-    -webkit-transition-timing-function: ease-out;
-    -webkit-transition-duration: 250ms;
-    -moz-transform: scale(1.2,1.2) ;
-    -moz-transition-timing-function: ease-out;
-    -moz-transition-duration: 500ms;
-    position: relative;
-    z-index: 99;
-}
+
 
 .ui-dialog{
 	background:  url(../img/callery.jpg) no-repeat center center fixed !important; 
@@ -980,6 +959,9 @@ button{
 #contact_us textarea{
     height: 150px !important;
     font-family: yekan !important;
+}
+.us{
+	color: #FFF !important;
 }
 /*--=============--   --===================--*/
 /*--=============--   --===================--*/

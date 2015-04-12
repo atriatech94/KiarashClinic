@@ -1,14 +1,27 @@
+
 $(document).on( "pagebeforeshow" ,function() {
-$.mobile.defaultPageTransition = "flow";
+$.mobile.defaultPageTransition = "fade";
+
+$('[data-role="page"],home,body').hammer().bind("swipeleft", function(event) {
+    $.mobile.activePage.find('#right-panel').panel("open");
+	return false;
+});
+$('[data-role="page"],home,body').hammer().bind("swiperight", function(event) {
+    $.mobile.activePage.find('#right-panel').panel("close");
+	return false;
+});
  /*--------------------for Android 4.4.x ----------------------*/
-		 $.event.special.swipe.horizontalDistanceThreshold =10;
-		/*--------------------for other divice ----------------------*/
-		  $('[data-role="page"]').on("swipeleft ",function(){
+/*--------------------for other divice ----------------------*/
+		/*  $('[data-role="page"]').on("swipeleft ",function(){
                     console.log('swipe');
                     $.mobile.activePage.find('#right-panel').panel("open");
                 });
-		/*--------------------for other divice ----------------------*/
-	
+     */
+/*--------------------for other divice ----------------------*/
+    $('a[data-rel="back"]').on("click",function(){
+       $( '[data-role="popup"]' ).popup( "close");
+    
+    });
 
 /*----------------------------------*/	
 //alert( $.mobile.activePage.attr('id') );
@@ -22,25 +35,9 @@ $(window).resize(function(){
 
 });
 /*-----------------------------------*/
-    $(document).bind( "pagechange", function( event ) { 
-      
-    var active_page =  $.mobile.activePage.attr('id');
-     var $body = $(' html');
-    if(active_page == "index" )
-    {   
-		$body.removeClass('background2');
-        $body.addClass('background1');
 
 
-    }
-    else 
-    {
-        $body.removeClass('background1');
-        $body.addClass('background2');
-	}
-        
-        
-});
+
 /*----------------------------------*/			
 	$("[data-role='collapsible']").collapsible({
 	
@@ -55,13 +52,10 @@ $(window).resize(function(){
 		});
 		
 	});
-	
-	
-	
-	$(document).bind('panelopen', function (e, data) {
-		 $('.logo_menu img').addClass('panel_trn');
-        $('.logo_menu h3').addClass('h3_menu');
-	});
+$(document).bind('panelopen', function (e, data) {
+    $('.logo_menu img').addClass('panel_trn');
+    $('.logo_menu h3').addClass('h3_menu');
+});
 	$(document).bind('panelclose', function (e, data) {
 		 $('.logo_menu img').removeClass('panel_trn');
         $('.logo_menu h3').removeClass('h3_menu');

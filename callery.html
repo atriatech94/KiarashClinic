@@ -2,31 +2,26 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="msapplication-tap-highlight" content="no" />
 <title>Untitled Document</title>
 <link type="text/css" rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" >
 <link type="text/css" rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/font-awesome.min.css" >
-<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
-<script type="text/javascript" src="js/_ezswipe.js"></script>
+
 </head>
 
 <body onload="onLoad();">
 <div data-role="page" class="_ezswipe sps" id="lipomatic" >
+
+
   <div class="header_l" data-role="header"  style="background-color:transparent !important;border: none;">
     <h1 ></h1>
     <a href="#right-panel" data-icon="bars" style="background-color:#000 !important;" id="menu_icon" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="ui-nodisc-icon ui-btn-right">Open right panel</a></div>
   <!-- /header -->
   <div role="main" class="ui-content">
     <div class="content">
-<style>
-
-</style>
-</style>
-      <div class="service_ico">
+        <div class="service_ico">
         <div class="icon"><a  data-rel="popup" data-position-to="window"  data-inline="true" data-transition="pop" href="#dialog1"  data-transition="flip"><img src="img/icon/icon%20(5).png"><span>لیپوماتیک چیست</span></a></div>
         <!-- /icon -->
         <div class="icon"><a  data-rel="popup" data-position-to="window"  data-inline="true" data-transition="pop" href="#dialog2" data-transition="flip"><img src="img/icon/icon%20(3).png"><span>مزایای لیپوماتیک</span></a></div>
@@ -46,7 +41,7 @@
   </div>
   <!-- /ui-content -->
   
-  <div data-role="panel" id="right-panel" data-display="push" pn="panel"  data-position="right" data-theme="b">
+  <div data-role="panel" id="right-panel" data-display="overlay" pn="panel"  data-position="right" data-theme="b">
     <div class="logo_menu">
       <div id="card"> <img src="img/logo-white.png"> </div>
       <h3>KIARASH</h3>
@@ -67,7 +62,7 @@
   <!-- /panel --> 
   <!-------------------------------------------------------------------------------------------->
         <div data-role="popup" id="dialog1" data-overlay-theme="b" data-theme="b" class="ui-corner">
-          <a href="#" data-rel="back" class="ui-btn ui-btn-b ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right close_video">Close</a>
+          <a href="#lipomatic" data-rel="back" class="ui-btn ui-btn-b ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right close_video">Close</a>
               <div role="main" id="micon" class="ui-content content" >
                 <h1>لیپوماتیک چیست ؟</h1>
                 <p>
@@ -100,22 +95,18 @@ Lipomatic مشکل ایمنی را که در روش سنتی لیپوساکشن 
 <br>
 <br>
 
-بدلیل عدم استفاده از لیزر و عدم ایجاد حرارت در بافت چربى امکان فیبروز در بافت زیر پوست بسیار کم است و به این علت انتخاب دستگاه لیپوماتیک براى شکم خانمهایی که تاکنون زایمان نداشته اند مناسب تر است .
-همچنین این روش براى افرادى که قبلا ساکشن و یا لیپولیزر شده اند واز نتایج آن راضی نیستند و  بافت چربى سفت و فیبروز شده است مناسب تر از سایر روشهاى قبلى است.
-<br>
-<br>
 
 این دستگاه که توسط سازمان غذایی دارویی آمریکا FDA تایید شده است و در ۵۰ کشور جهان استفاده می شود، سیستمی قابل اعتماد  است که با روشی بی خطر و موثر و دقیق، این امکان را می دهد که نسبت به تخلیه چربی به طور کاملا یکنواخت و طبیعی از مناطقی مانند شکم ، پهلو ، پشت ، باسن ، ران ، ساق و حتی حجم  اندک از چربی های موضعی  در مناطقی مانند غبغب ، بالای سینه ، بزرگی سینه آقایان ، اطراف زانو  برداشت و اندامی زیبا و متناسب را در یک جلسه بدست آورد به همین دلیل این روش به پیکرتراشی نیز معروف است.
 در روش لیپوماتیک دوره نقاهت بعد از عمل بسیار کوتاهتر و بین ۳ تا ۷ روز می باشد و دوره استفاده از گن نیز حدود دو هفته می باشد.
 نکته قابل توجه آنکه بدلیل عدم آسیب به سلولهای چربی به طور همزمان می توان چربی خارج شده را به هر قسمتی از بدن تزریق کرد.
                 
                 </p>
-                <a href="index.html" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-a">بازگشت</a> </div>
+                <a href="#lipomatic" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-a">بازگشت</a> </div>
         </div>
     <!-------------------------------------------------------------------------------------------->
     <!-------------------------------------------------------------------------------------------->
         <div data-role="popup" id="dialog2" data-overlay-theme="b" data-theme="b" class="ui-corner-all">
-          <a href="#" data-rel="back" class="ui-btn ui-btn-b ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right close_video">Close</a>
+          <a href="#lipomatic" data-rel="back" class="ui-btn ui-btn-b ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right close_video">Close</a>
           <div role="main" id="micon" class="ui-content content" >
             <h1>مزایای لیپوماتیک</h1>
             <p>1- یکنواختی لایه چربی زیر پوست در لیپوماتیک عالی است و هیچ گونه بقایای مانده از چربی که در روش های دیگر ساکشن بصورت گلوله مانند در زیر پوست لمس می گردد در این روش وجود ندارد.
@@ -146,12 +137,12 @@ Lipomatic مشکل ایمنی را که در روش سنتی لیپوساکشن 
               <br><br>
 
               10- گرچه جمع شدن پوست در لیپوماتیک نسبت به روش های دیگر بسیار بهتر صورت می گیرد ولی در مواردی که شلی و افتادگی پوست زیاد باشد نیاز به عمل جراحی وجود خواهد داشت.</p>
-            <a href="index.html" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-a">بازگشت</a> </div>
+            <a href="#" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-a">بازگشت</a> </div>
         </div>
     <!-------------------------------------------------------------------------------------------->
       <!-------------------------------------------------------------------------------------------->
         <div data-role="popup" id="dialog3" data-overlay-theme="b" data-theme="b" class="ui-corner-all">
-          <a href="#" data-rel="back" class="ui-btn ui-btn-b ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right close_video">Close</a>
+          <a href="#lipomatic" data-rel="back" class="ui-btn ui-btn-b ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right close_video">Close</a>
           <div role="main" id="micon" class="ui-content content">
             <h1> تغییرات پوست بعد از لیپوماتیک</h1>
             <p>روش لیپوماتیک بدلیل استفاده از امواج اینفراسونیک که اثر لیفت کنندگی دارد کمترین میزان شلی و افتادگی پوست را نسبت به روش های دیگر ایجاد می نماید. 
@@ -177,7 +168,7 @@ Lipomatic مشکل ایمنی را که در روش سنتی لیپوساکشن 
               نوع لیپوماتیک سطحی یا عمقی :<br>
 
               در روش سطحی  سفتی و جمع شدگی بیشتری در پوست بعد لیپوماتیک داریم ولی ناهمواری در عوض بیشتر میباشد ودر نوع لیپوماتیک عمقی بالعکس .</p>
-            <a href="index.html" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-a">بازگشت</a> </div>
+            <a href="#lipomatic" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-a">بازگشت</a> </div>
         </div>
     <!-------------------------------------------------------------------------------------------->
       <!-------------------------------------------------------------------------------------------->
@@ -194,12 +185,12 @@ Lipomatic مشکل ایمنی را که در روش سنتی لیپوساکشن 
 حالا سوال این است که آیا لیپوماتیک را برای افراد با اضافه وزن بالا  از روش لیپوماتیک سود می برند ؟ 
 <br>
 برای پاسخ به این سوال باید بگوییم افراذی که در گروه خیلی چاق جای می گیرند و BMI یا اندکس توده بدنی بالای ۴۰ دارند از روش های جراحی بیشتر سود خواهند برد مشروط به آنکه محدودیتی برای بیهوشی و جراحی نداشته باشند . افرادیکه در گروه چاق جای می گیرند می توانند از هر دو روش جراحی یا لیپوماتیک بهره ببرند و وضعیت جسمانی و نحوه توزیع چربی در آنان در تصمیم گیری و ارائه بهترین روش توسط پزشک باید مد نظر قرار گیرد. </p>
-                <a href="index.html" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-a">بازگشت</a> </div>
+                <a href="#" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-a">بازگشت</a> </div>
         </div>
     <!-------------------------------------------------------------------------------------------->
       <!-------------------------------------------------------------------------------------------->
         <div data-role="popup" id="dialog5" data-overlay-theme="b" data-theme="b" class="ui-corner-all">
-          <a href="#" data-rel="back" class="ui-btn ui-btn-b ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right close_video">Close</a>
+          <a href="#lipomatic" data-rel="back" class="ui-btn ui-btn-b ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right close_video">Close</a>
           <div role="main" id="micon" class="ui-content content" >
             <h1>لیپوماتیک و زیبایی صورت </h1>
             <p>نتایج بسیار رضایت بخشی که توسط لیپوماتیک در رفع سریع و آسان غبغب حاصل شده است بر کسی پوشیده نیست .
@@ -210,7 +201,7 @@ Lipomatic مشکل ایمنی را که در روش سنتی لیپوساکشن 
             <br>
 <br>
  در این روش همزمان با غبغب ، چربی های قسمت تحتاتنی صورت که باعث ایجاد ظاهری نامناسب می گردد نیز خارج می گردد و به دلیل اثر لیفت کنندکی قوی دستگاه لیپوماتیک پوست ناحیه مورد درمان نیز کاملا لیفت شده و اثرات شگفت آوری را بوجود می آورد که با مشاهده نمونه تصاویر بیمارانی که بدین شکل درمان شده اند ، موید این ادعا می باشد.</p>
-            <a href="#" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-a">بازگشت</a> </div>
+            <a href="#lipomatic" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-a">بازگشت</a> </div>
         </div>
     <!-------------------------------------------------------------------------------------------->
       <!-------------------------------------------------------------------------------------------->
@@ -230,7 +221,7 @@ Lipomatic مشکل ایمنی را که در روش سنتی لیپوساکشن 
                    - ران<br>
                    - باسن <br>
                 </p>
-                <a href="index.html" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-a">بازگشت</a> </div>
+                <a href="#" data-rel="back" class="ui-btn ui-shadow ui-corner-all ui-btn-a">بازگشت</a> </div>
         </div>
     <!-------------------------------------------------------------------------------------------->
   <!-- /panel --> 
@@ -239,9 +230,16 @@ Lipomatic مشکل ایمنی را که در روش سنتی لیپوساکشن 
 
 <style>
 #micon h1{
-    margin-top: -30px !important;
+    margin-top: -20px !important;
     font-size: 20px;
     color:#ebebeb;
+}
+ #micon {
+    width: 93%;
+     height: 65vh;
+     overflow-x: hidden;
+     overflow-y: auto;
+     margin: 0 auto;
 }
 #micon p{
     font-size: 14px;
@@ -255,9 +253,16 @@ Lipomatic مشکل ایمنی را که در روش سنتی لیپوساکشن 
 font-family:yekan
 }
 #dialog1 , #dialog2, #dialog3 , #dialog4, #dialog5 ,#dialog6{
-    width: 90% !important;
-    margin: 20px auto !important;
+    width: 95% !important;
+    margin: 40px auto !important;
+    height: 80vh;
 }    
 </style>
 </body>
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/hammer.min.js"></script>
+<script type="text/javascript" src="js/jquery.hammer.js"></script>
 </html>
