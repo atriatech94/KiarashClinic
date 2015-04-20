@@ -24,19 +24,14 @@ function getDeviceProperty()
 	*/
 }
  function exitFromApp()
- {
-	 navigator.app.exitApp(); 
-     
- }
-function amintest(){
-
-	if ($.mobile.activePage.attr('id') == 'index') {
-		 navigator.app.exitApp(); 
-	}else if($.mobile.activePage.attr('id') == 'blog_detail'){
-          $.mobile.changePage("blog.html");
-	}else{
-        $.mobile.changePage("index.html");
-	}
-	return false;
+{
+    var r = confirm("Are you sure you want to exit ?");
+    if (r == true) {
+        navigator.app.exitApp(); 
+    } else {
+       
+    }
+ 	 
 }
+
 
