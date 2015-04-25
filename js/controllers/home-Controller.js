@@ -24,13 +24,14 @@ angular.module('kiarash')
 							 
 								var loc =  $location.path();
 								loc = loc.replace("/", "");
+								var res = loc.split("/");
 								if(loc == "home" || loc == "") {
 									 navigator.app.exitApp(); 
-								}else if(loc == "blogdetail"){
-									alert(loc);
-									  windows.location.href="#/blog";
+								}else if(res[0] == "blogdetail"){
+									
+									  windows.location.href="./#/blog";
 								}else{
-									 windows.location.href="#/home";
+									 windows.location.href="./#/home";
 								}
 								return false;
 					}
