@@ -1,10 +1,10 @@
- <widget id="com.phonegap.kiarashclinic" version="1.1.1">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="ir.atriatech.kiarashclinic" version="1.1.0">
   <name>Lipomatic and Beauty</name>
   <description>Lipomatic,skin,hair and beauty</description>
-  <author href="http://atriatech.ir" email="info@atriatech.ir">
+  <author href="http://atriatech.ir" email="info@atriatech.ir">ATRIATECH</author>
   <content src="index.html"/>
   <preference name="permissions" value="none"/>
-  <preference name="orientation" value="portrait"/>
+  <preference name="orientation" value="portrait "/>
   <preference name="target-device" value="universal"/>
   <preference name="fullscreen" value="true"/>
   <preference name="webviewbounce" value="true"/>
@@ -18,8 +18,14 @@
   <preference name="disable-cursor" value="false"/>
   <preference name="android-minSdkVersion" value="7"/>
   <preference name="android-installLocation" value="auto"/>
+  <preference name="splash-screen-duration" value="1000"/>
  
-
+ 
+  <gap:plugin name="org.apache.cordova.console"/>
+  <gap:plugin name="org.apache.cordova.device-orientation"/>
+  <gap:plugin name="org.apache.cordova.inappbrowser"/>
+  <gap:plugin name="org.apache.cordova.network-information"/>
+  <gap:plugin name="org.apache.cordova.splashscreen"/>
 
   <icon src="icon.png" />
   <icon src="res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:qualifier="ldpi"/>
