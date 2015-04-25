@@ -22,19 +22,17 @@ angular.module('kiarash')
 				      document.addEventListener("backbutton",amintest, false);
 				         function amintest(){
 							 
-                        var loc =  $location.path();
-					    loc = loc.replace("/", "");
-						if(loc == "home" || loc == "") {
-							alert(loc);
-							// navigator.app.exitApp(); 
-						}else if(loc == "blogdetail"){
-							alert(loc);
-							 // windows.location.href="#/blog";
-						}else{
-							alert(loc);
-							// windows.location.href="#/home";
-						}
-						return false;
+								var loc =  $location.path();
+								loc = loc.replace("/", "");
+								if(loc == "home" || loc == "") {
+									 navigator.app.exitApp(); 
+								}else if(loc == "blogdetail"){
+									alert(loc);
+									  windows.location.href="#/blog";
+								}else{
+									 windows.location.href="#/home";
+								}
+								return false;
 					}
 				
 				$(window).on('hashchange', function(e){
@@ -53,7 +51,6 @@ angular.module('kiarash')
                 /*========================================*/
                 $(window).on('hashchange', function(e){
                    var loc =  $location.path();
-				   alert(loc);
                    loc = loc.replace("/", "");
                    $('.navbar li a').removeClass('active');
                    $('#'+loc).children("a").addClass('active');
