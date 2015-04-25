@@ -44,9 +44,8 @@ angular.module('kiarash')
                             /*========================================================*/
                      }
                 });
-				$(document).ready(function() {
-				  $("*img").panzoom();
-				});
+
+				
                 /*==========================================*/
                 
                  swiper2 = new Swiper('.swiper-container',{

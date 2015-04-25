@@ -790,7 +790,7 @@ margin-top: 0px !important;
 /*--=============--  gallery detail --===================--*/
 .gallery_detail {
 	width: 100%;
-    margin-top: 20px;
+    margin-top: 80px;
     overflow: auto;
 }
 .gallery_detail a img {
@@ -810,7 +810,7 @@ margin-top: 0px !important;
     overflow: auto;
     border:2px solid #aebff2;
     border-radius: 4px;
-    overflow: auto;
+    overflow: hidden;
 }
 /*--=============--   --===================--*/
 
@@ -894,6 +894,7 @@ margin-top: 0px !important;
     height: 50px;
     top:0px;
     position: fixed;
+	z-index:10;
 }
 .header_page ul{
     width: 100%;    

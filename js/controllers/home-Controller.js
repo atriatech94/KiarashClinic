@@ -7,25 +7,45 @@ angular.module('kiarash')
         .success(function(data){
             $rootScope.news= data;
             $rootScope.datt= 1;
+		
         });
     }else{
          $rootScope.datt= 0;
     }
-                        
-    
-    /*var online = navigator.onLine;
-    if(online){
-        
-    }*/
-    
+
 })
 .directive('swSwipe', [ '$location', function ($location){
 		return {
 			link: function($scope) {
-                    swiper2 = new Swiper('.swiper-container',{
-					 pagination: '.swiper-pagination',
-       				 slidesPerView: 'auto',
-                      followFinger : false,
+				
+				       var loc =  $location.path();
+					   loc = loc.replace("/", "");
+				document.addEventListener("backbutton",amintest, false);
+				function amintest(){
+
+						if(loc == "home" || loc == "") {
+							 navigator.app.exitApp(); 
+						}else if(loc == "blogdetail"){
+							  windows.location.href="/#/blog";
+						}else{
+							 windows.location.href="/#/home";
+						}
+						return false;
+					}
+				
+				$(window).on('hashchange', function(e){
+					   var loc =  $location.path();
+					   loc = loc.replace("/", "");
+					   if(loc != "home" || loc != "")
+					   {
+						   swiper2 = new Swiper('.swiper-container',{
+						   pagination: '.swiper-pagination',
+						   slidesPerView: 'auto',
+						   followFinger : false,
+					   });
+					   }
+						
+					
 				});
                 var flags = 0
                $('body').delegate(".header_page .fir","click",function(){
@@ -33,7 +53,7 @@ angular.module('kiarash')
                 });
                 /*========================================*/
                 $(window).on('hashchange', function(e){
-                   var loc =  $location.path()
+                   var loc =  $location.path();
                    loc = loc.replace("/", "");
                    $('.navbar li a').removeClass('active');
                    $('#'+loc).children("a").addClass('active');
@@ -49,3 +69,4 @@ angular.module('kiarash')
 			},//end link
 		}
 }]);
+
