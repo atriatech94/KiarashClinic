@@ -52,6 +52,7 @@ angular.module('kiarash')
                 /*========================================*/
                 $(window).on('hashchange', function(e){
                    var loc =  $location.path();
+				   alert(loc);
                    loc = loc.replace("/", "");
                    $('.navbar li a').removeClass('active');
                    $('#'+loc).children("a").addClass('active');
