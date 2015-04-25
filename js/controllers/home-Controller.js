@@ -20,6 +20,7 @@ angular.module('kiarash')
 				
 				       
 				      document.addEventListener("backbutton",amintest, false);
+					  
 				         function amintest(){
 							 
 								var loc =  $location.path();
@@ -28,10 +29,11 @@ angular.module('kiarash')
 								if(loc == "home" || loc == "") {
 									 navigator.app.exitApp(); 
 								}else if(res[0] == "blogdetail"){
-									
-									  windows.location.href="./#/blog";
+									alert(blogdetail);
+									 // windows.location.href="./#/blog";
 								}else{
-									 windows.location.href="./#/home";
+									alert('else');
+									// windows.location.href="./#/home";
 								}
 								return false;
 					}
