@@ -32,7 +32,7 @@ angular.module('kiarash')
 								else
 								{
 									alert('else');
-								    windows.location.href="./#/home";
+								    $location.path('/home');
 								}
 								return false;
 					}
