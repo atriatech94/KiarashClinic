@@ -44,31 +44,32 @@ angular.module('kiarash')
                             /*========================================================*/
                      }
                 });
+				$(document).ready(function() {
+				  $("*img").panzoom();
+				});
                 /*==========================================*/
-                var flags = 0
+                
                  swiper2 = new Swiper('.swiper-container',{
 					 pagination: '.swiper-pagination',
        				 slidesPerView: 'auto',
                       followFinger : false,
 				});
-               $('.header_page .fir').on("click",function(){
-                   if(flags==0)
-                   {
-                      swiper2.slideNext();
-                      flags ++; 
-                   }else{
-                       swiper2.slidePrev();
-                       flags-- ;
-                   }
-                     
-                });
-               /*==========================================*/
-                $('div[data-role="collapsible"] h4').bind("click",function(){
-                    
-                   $('div[data-role="collapsible"] p').slideUp(100);
-                   $(this).next('p').slideDown(100);                   
-                });
                 
+               /*==========================================*/
+                didi = 1000; 
+                $('div[data-role="collapsible"] h4').bind("click",function(){
+                    if( didi != $(this).parent().index() )
+                    {
+                        $('div[data-role="collapsible"] p').slideUp(100);
+                        $(this).next('p').slideDown(100);    
+                        didi = $(this).parent().index() ;
+                   
+                    }else{
+                        $('div[data-role="collapsible"] p').slideUp(100);
+                        didi = 1000 ;
+                     }
+                   
+                 });
                 /*==========================================*/
 			},//end link
 		}

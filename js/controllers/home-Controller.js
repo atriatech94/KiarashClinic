@@ -19,7 +19,7 @@ angular.module('kiarash')
     }*/
     
 })
-.directive('swSwipe', function (){
+.directive('swSwipe', [ '$location', function ($location){
 		return {
 			link: function($scope) {
                     swiper2 = new Swiper('.swiper-container',{
@@ -27,8 +27,24 @@ angular.module('kiarash')
        				 slidesPerView: 'auto',
                       followFinger : false,
 				});
+                var flags = 0
+               $('body').delegate(".header_page .fir","click",function(){
+                   if(flags==0){swiper2.slideNext();flags ++; }else{swiper2.slidePrev();flags-- ;}
+                });
+                /*========================================*/
+                $(window).on('hashchange', function(e){
+                   var loc =  $location.path()
+                   loc = loc.replace("/", "");
+                   $('.navbar li a').removeClass('active');
+                   $('#'+loc).children("a").addClass('active');
+                });
                 
-                
+                /*===========================================================*/
+                $('.navbar li').on("click",function(){
+                    $('.navbar li a').removeClass('active');
+                    $(this).children("a").addClass('active');
+                    swiper2.slidePrev();
+                });
 			},//end link
 		}
-});
+}]);
