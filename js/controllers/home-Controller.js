@@ -24,11 +24,14 @@ angular.module('kiarash')
 				         function amintest(){
 
 						if(loc == "home" || loc == "") {
-							 navigator.app.exitApp(); 
+							alert(loc);
+							// navigator.app.exitApp(); 
 						}else if(loc == "blogdetail"){
-							  windows.location.href="#/blog";
+							alert(loc);
+							 // windows.location.href="#/blog";
 						}else{
-							 windows.location.href="#/home";
+							alert(loc);
+							// windows.location.href="#/home";
 						}
 						return false;
 					}
