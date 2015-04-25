@@ -28,12 +28,11 @@ angular.module('kiarash')
 								var res = loc.split("/");
 								if(loc == "home" || loc == "") {
 									 navigator.app.exitApp(); 
-								}else if(res[0] == "blogdetail"){
-									alert(blogdetail);
-									 // windows.location.href="./#/blog";
-								}else{
+								}
+								else
+								{
 									alert('else');
-									// windows.location.href="./#/home";
+								    windows.location.href="./#/home";
 								}
 								return false;
 					}
