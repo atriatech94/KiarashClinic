@@ -18,11 +18,12 @@ angular.module('kiarash')
 		return {
 			link: function($scope) {
 				
-				       var loc =  $location.path();
-					   loc = loc.replace("/", "");
+				       
 				      document.addEventListener("backbutton",amintest, false);
 				         function amintest(){
-
+							 
+                        var loc =  $location.path();
+					    loc = loc.replace("/", "");
 						if(loc == "home" || loc == "") {
 							alert(loc);
 							// navigator.app.exitApp(); 
