@@ -20,32 +20,27 @@ angular.module('kiarash')
 				
 				       var loc =  $location.path();
 					   loc = loc.replace("/", "");
-				document.addEventListener("backbutton",amintest, false);
-				function amintest(){
+				      document.addEventListener("backbutton",amintest, false);
+				         function amintest(){
 
 						if(loc == "home" || loc == "") {
 							 navigator.app.exitApp(); 
 						}else if(loc == "blogdetail"){
-							  windows.location.href="/#/blog";
+							  windows.location.href="#/blog";
 						}else{
-							 windows.location.href="/#/home";
+							 windows.location.href="#/home";
 						}
 						return false;
 					}
 				
 				$(window).on('hashchange', function(e){
-					   var loc =  $location.path();
-					   loc = loc.replace("/", "");
-					   if(loc != "home" || loc != "")
-					   {
+					  
 						   swiper2 = new Swiper('.swiper-container',{
 						   pagination: '.swiper-pagination',
 						   slidesPerView: 'auto',
 						   followFinger : false,
 					   });
-					   }
-						
-					
+
 				});
                 var flags = 0
                $('body').delegate(".header_page .fir","click",function(){
