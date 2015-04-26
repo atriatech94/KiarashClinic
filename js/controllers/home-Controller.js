@@ -7,16 +7,19 @@ angular.module('kiarash')
         .success(function(data){
             $rootScope.news= data;
             $rootScope.datt= 1;
+			
 		
         });
     }else{
          $rootScope.datt= 0;
     }
 
+
 })
 .directive('swSwipe', [ '$location', function ($location){
 		return {
 			link: function($scope) {
+				
 				
 				  
 				$(window).on('hashchange', function(e){
@@ -26,12 +29,16 @@ angular.module('kiarash')
 						   slidesPerView: 'auto',
 						   followFinger : false,
 					   });
-
+                   
 				});
                 var flags = 0
                $('body').delegate(".header_page .fir","click",function(){
                    if(flags==0){swiper2.slideNext();flags ++; }else{swiper2.slidePrev();flags-- ;}
                 });
+				
+				$('body').delegate(".links_home a","click",function(){
+						swiper2.slideTo(0);
+						});
                 /*========================================*/
                 $(window).on('hashchange', function(e){
                    var loc =  $location.path();
