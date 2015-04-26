@@ -57,7 +57,7 @@ angular.module('kiarash')
                                                            $('.post_bl .setun2').append(result);
                                                    });
                                         });// end success
-                               
+								}
                               /*===============================================================*/ 
                                     
                               
