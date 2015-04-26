@@ -11,6 +11,40 @@ function onDeviceReady(){
 	// getDeviceProperty();
     
 }
+    
+document.addEventListener("backbutton",amintest, false);
+
+function amintest(){
+                        
+    
+    
+    var loc =   window.location.hash;
+    loc = loc.replace("#/", "");
+    var res = loc.split("/");
+
+    if(loc == "home" || loc == "")
+    {
+                                           
+        navigator.app.exitApp(); 
+    }
+    
+    else if(res[0]=="blogdetail")
+    {
+	   	 window.location.hash = "#/blog";							
+    }
+    else if(loc=="gallery/2" || loc=="gallery/1" || loc== "gallery/3" || loc=="gallery/4")
+    {
+         window.location.hash = "#/gallery";
+    }
+                             
+    else
+    {
+	   								
+         window.location.hash = "#/home";
+    }
+    return false;
+}
+				
 function getDeviceProperty()
 {
    // var deviceOS  = device.platform;  //fetch the device operating system

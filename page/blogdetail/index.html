@@ -2,8 +2,8 @@
 <div class="header_page">
     <ul>
         <li class="fir"><a href=""> <img src="img/menu.png"></a></li>
-        <li class="sec" ng-bind-html="detail[0].title"></li>
-        <li class="thr"> <a id="back" href="#/blog"> <img src="img/back.png"></a></li>
+        <li class="sec" ng-bind-html="title"></li>
+        <li class="thr"> <a href="#/blog"> <img src="img/back.png"></a></li>
         <div class="clear"></div>
     </ul>    
 </div>
@@ -16,9 +16,9 @@
     <br>
     <div>
         <section class="blog_detail" >
-            <h3 ng-bind-html="detail[0].title"></h3>
+            <h3 ng-bind-html="title"></h3>
 			<img ng-src="http://www.kiarashclinic.com/admin/uploads/post-small/{{detail[0].picname}}">
-			<div ng-bind-html="detail[0].description"></div>
+			<div ng-bind-html="description"></div>
             <br>تاریخ ارسال :{{detail[0].date}}<div>
             
         </section>

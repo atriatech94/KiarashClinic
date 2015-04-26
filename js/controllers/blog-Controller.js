@@ -1,5 +1,8 @@
 angular.module('kiarash')
 .controller('BlogController', function($scope) {
+	
+
+
                    
 })
 .directive('blogNews' , ['News' , '$rootScope' , function (News,$rootScope){
@@ -7,7 +10,7 @@ angular.module('kiarash')
                 link: function($scope) {
                        var online = navigator.onLine;
                         if(online){
-                                if( $rootScope.datt == 1)
+                                if( $rootScope.news != null)
                                 {
                                     /*=======================================================================*/
                                     $('.loading_img').show(0);
@@ -48,7 +51,7 @@ angular.module('kiarash')
                                                        result +='<p>'+element.date+'</p>';
                                                        result +='</a>';
                                                         if((index%2) == 0)
-                                                            $('.post_bl .setun1').append(result);
+                                                           $('.post_bl .setun1').append(result);
                                                        else
                                                            $('.post_bl .setun2').append(result);
                                                    });
@@ -102,10 +105,6 @@ angular.module('kiarash')
                        });
                     /*==================================================================*/
                     // end success
-                   
-                      
-                    
-
             },//end link
             templateUrl : "page/blog/blog-news.html"
         }

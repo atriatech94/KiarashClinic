@@ -18,35 +18,7 @@ angular.module('kiarash')
 		return {
 			link: function($scope) {
 				
-				       
-				      document.addEventListener("backbutton",amintest, false);
-					  
-				         function amintest(){
-							 
-								var loc =  $location.path();
-								loc = loc.replace("/", "");
-								var res = loc.split("/");
-								if(loc == "home" || loc == "")
-									 {
-										 navigator.app.exitApp(); 
-									 }
-								
-								else if(res[0]=="blogdetail")
-									{
-										return true;
-									}
-								else if(loc=="gallery/2" || loc=="gallery/1" || loc== "gallery/3" || loc=="gallery/4")
-									{
-										window.location = "#/gallery";
-									}
-								else
-									{
-									
-										window.location = "#/home";
-									}
-								return false;
-					}
-				
+				  
 				$(window).on('hashchange', function(e){
 					  
 						   swiper2 = new Swiper('.swiper-container',{
