@@ -34,10 +34,10 @@ angular.module('kiarash')
                                      /*=======================================================================*/
                                 }// $rootScope.datt == 1
                                 else{
-									  if(online == 0 &&  $rootScope.news == null){
-                            $.fancybox.open("<p>برای مشاهده این قسمت اینترنت گوشی خود را فعال کنید </p><button class='refresh'>تلاش مجدد</button>");
+							if(online == 0){
+                              $.fancybox.open("<p>برای مشاهده این قسمت اینترنت گوشی خود را فعال کنید </p><button class='refresh'>تلاش مجدد</button>");
                         }
-						else{
+						   else{
                                      /*===============================================================*/ 
                                        $('.loading_img').show(0);
                                         News.all()
