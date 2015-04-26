@@ -33,7 +33,7 @@ angular.module('kiarash')
 								
 								else if(res[0]=="blogdetail")
 									{
-										window.location = "#/blog";
+										window.location = $('#back').attr('href');
 									}
 								else if(loc=="gallery/2" || loc=="gallery/1" || loc== "gallery/3" || loc=="gallery/4")
 									{
