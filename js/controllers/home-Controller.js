@@ -36,16 +36,14 @@ angular.module('kiarash')
                    if(flags==0){swiper2.slideNext();flags ++; }else{swiper2.slidePrev();flags-- ;}
                 });
 				
-				$('body').delegate(".links_home a","click",function(){
-						swiper2.slidePrev();
-						});
+				
                 /*========================================*/
                 $(window).on('hashchange', function(e){
                    var loc =  $location.path();
                    loc = loc.replace("/", "");
                    $('.navbar li a').removeClass('active');
                    $('#'+loc).children("a").addClass('active');
-				   swiper2.slidePrev();
+		
 				 
                 });
                 
@@ -53,7 +51,7 @@ angular.module('kiarash')
                 $('.navbar li').on("click",function(){
                     $('.navbar li a').removeClass('active');
                     $(this).children("a").addClass('active');
-                    swiper2.slidePrev();
+                
                 });
 			},//end link
 		}
