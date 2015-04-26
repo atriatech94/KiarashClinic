@@ -26,14 +26,24 @@ angular.module('kiarash')
 								var loc =  $location.path();
 								loc = loc.replace("/", "");
 								var res = loc.split("/");
-								if(loc == "home" || loc == "") {
-									 navigator.app.exitApp(); 
-								}
+								if(loc == "home" || loc == "")
+									 {
+										 navigator.app.exitApp(); 
+									 }
+								
+								else if(res[0]=="blogdetail")
+									{
+										window.location = "#/blog";
+									}
+								else if(loc=="gallery/2" || loc=="gallery/1" || loc== "gallery/3" || loc=="gallery/4")
+									{
+										window.location = "#/gallery";
+									}
 								else
-								{
-									alert('else');
-								    $location.path('/home');
-								}
+									{
+									
+										window.location = "#/home";
+									}
 								return false;
 					}
 				
@@ -56,7 +66,7 @@ angular.module('kiarash')
                    loc = loc.replace("/", "");
                    $('.navbar li a').removeClass('active');
                    $('#'+loc).children("a").addClass('active');
-				   swiper2.slidePrev();
+				 
                 });
                 
                 /*===========================================================*/
