@@ -38,6 +38,7 @@ angular.module('kiarash')
                    loc = loc.replace("/", "");
                    $('.navbar li a').removeClass('active');
                    $('#'+loc).children("a").addClass('active');
+				   swiper2.slideTo(0);
 				 
                 });
                 
@@ -45,7 +46,7 @@ angular.module('kiarash')
                 $('.navbar li').on("click",function(){
                     $('.navbar li a').removeClass('active');
                     $(this).children("a").addClass('active');
-                    swiper2.slidePrev();
+                    swiper2.slideTo(0);
                 });
 			},//end link
 		}

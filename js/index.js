@@ -22,6 +22,11 @@ function amintest(){
     loc = loc.replace("#/", "");
     var res = loc.split("/");
 
+    if($.fancybox.isOpen)
+	{
+		$.fancybox.close();
+		return false;
+	}
     if(loc == "home" || loc == "")
     {
                                            
