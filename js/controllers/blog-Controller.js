@@ -9,7 +9,8 @@ angular.module('kiarash')
         return {
                 link: function($scope) {
                        var online = navigator.onLine;
-                        if(online){
+                    
+                       
                                 if( $rootScope.news != null)
                                 {
                                     /*=======================================================================*/
@@ -59,8 +60,8 @@ angular.module('kiarash')
                                
                               /*===============================================================*/ 
                                     
-                                }// else $rootScope.datt == 1
-                        }else{
+                              
+                        if(online == 0 &&  $rootScope.news == nul){
                             $.fancybox.open("<p>برای مشاهده این قسمت اینترنت گوشی خود را فعال کنید </p><button class='refresh'>تلاش مجدد</button>");
                         }
                      //seda(News,$rootScope);
