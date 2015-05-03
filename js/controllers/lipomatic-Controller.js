@@ -5,14 +5,6 @@ angular.module('kiarash')
 .directive('fancyBox', function (){
 		return {
 			link: function($scope) {
-                $('.icon ,.service_popup').click(function(){
-                    page = $(this).attr('page')
-                   $.fancybox.open({
-                        href : 'page/popupl/'+page+'.html',
-                        type : 'iframe',
-                        padding : 5
-                    });
-                });
                
                 $('.fancybox-thumbs').fancybox({
                     prevEffect : 'none',

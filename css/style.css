@@ -9,10 +9,12 @@
 html {
     -ms-touch-action: pan-x;
     touch-action: pan-x;
+	
 }
 body {
     -ms-touch-action: pan-y;
     touch-action: pan-y;
+	
     -ms-content-zooming: none;
     overflow: auto;
     -ms-content-zooming: none;
@@ -919,7 +921,7 @@ margin-top: 0px !important;
     width:100% ;
 }
 .header_page ul li.sec{
-    width: 60%;
+    width: 90%;
     font-size: 16px;
     padding-top: 16px;
      text-overflow: ellipsis;
@@ -928,7 +930,7 @@ margin-top: 0px !important;
     direction: rtl;
 }
 .header_page ul li.thr{
-    width: 19%;
+    width: 5%;
     direction: ltr;
 }
 .header_page ul li.thr a{

@@ -21,10 +21,7 @@ angular.module('kiarash')
 		templateUrl: 'page/about/index.html',
 		 controller: 'AboutController'
 		})
-        .when('/contact', {
-		templateUrl: 'page/contact/index.html',
-		 controller: 'ContactController'
-		})
+
         .when('/faq', {
 		templateUrl: 'page/faq/index.html',
 		 controller: 'FaqController'
@@ -48,6 +45,31 @@ angular.module('kiarash')
 		})
         .when('/gallery/4', {
 		templateUrl: 'page/gallerydetail/4.html',
+		})
+		
+		.when('/popupl/1', {
+		templateUrl: 'page/popupl/1.html',
+		})
+		.when('/popupl/2', {
+		templateUrl: 'page/popupl/2.html',
+		})
+		.when('/popupl/3', {
+		templateUrl: 'page/popupl/3.html',
+		})
+		.when('/popupl/4', {
+		templateUrl: 'page/popupl/4.html',
+		})
+		.when('/popupl/5', {
+		templateUrl: 'page/popupl/5.html',
+		})
+		.when('/popupl/6', {
+		templateUrl: 'page/popupl/6.html',
+		})
+		.when('/popupl/7', {
+		templateUrl: 'page/popupl/7.html',
+		})
+		.when('/popupl/8', {
+		templateUrl: 'page/popupl/8.html',
 		})
         
         

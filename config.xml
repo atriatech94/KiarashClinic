@@ -95,11 +95,7 @@
   
 </platform>
 
-<platform name="wp8">
-  
-    <splash src="res/screen/windows-phone/screen-portrait.jpg" width="768" height="1280"/>
-</platform>
-
+<gap:splash src="splash/winphone/splash.jpg" gap:platform="winphone" />
 
 <preference name="SplashScreenDelay" value="10000" />
  
