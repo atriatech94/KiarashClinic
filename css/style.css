@@ -6,20 +6,18 @@
 	Theme URI: http://kiarashclinic.com/
 	Hex-color : #009390 green , #203b84 blue
 */
-
+html {
+    -ms-touch-action: pan-x;
+    touch-action: pan-x;
+}
+body {
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -ms-content-zooming: none;
+    overflow: auto;
+    -ms-content-zooming: none;
+}
 html,body,div,span,applet,object,iframe,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,label,legend,p,blockquote,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}body{line-height:1;color:black;background:white;}:focus{outline:0;}table{border-collapse:collapse;border-spacing:0;}caption,th,td{text-align:left;font-weight:normal;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}ol,ul{list-style:none;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}blockquote:before,blockquote:after,q:before,q:after{content:"";}blockquote,q{quotes:"" "";}abbr,acronym{border:0;}
-
-
-    html {
-        -ms-touch-action: pan-x;
-        touch-action: pan-x;
-    }
-
-    body {
-        -ms-touch-action: pan-y;
-        touch-action: pan-y;
-        -ms-content-zooming: none;
-    }
 @font-face{
 		font-family: 'yekan';
 		src:url('../fonts/yekan/BYekan.eot?v=4.2.0');
@@ -921,7 +919,7 @@ margin-top: 0px !important;
     width:100% ;
 }
 .header_page ul li.sec{
-    width: 90%;
+    width: 60%;
     font-size: 16px;
     padding-top: 16px;
      text-overflow: ellipsis;
@@ -930,7 +928,7 @@ margin-top: 0px !important;
     direction: rtl;
 }
 .header_page ul li.thr{
-    width: 5%;
+    width: 19%;
     direction: ltr;
 }
 .header_page ul li.thr a{
