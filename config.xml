@@ -95,9 +95,10 @@
   
 </platform>
 
-<gap:splash src="splash/winphone/splash.jpg" gap:platform="winphone" />
+<platform name="wp8">
+    <splash src="res/screen/windows-phone/splash.jpg" width="480" height="800"/>
+</platform>
+<gap:splash src="res/screen/windows-phone/splash.jpg" gap:platform="winphone" />
 
-<preference name="SplashScreenDelay" value="10000" />
- 
   <access origin="*"/>
 </widget>
