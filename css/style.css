@@ -6,17 +6,7 @@
 	Theme URI: http://kiarashclinic.com/
 	Hex-color : #009390 green , #203b84 blue
 */
-html {
-    -ms-touch-action: pan-x;
-    touch-action: pan-x;
-}
-body {
-    -ms-touch-action: pan-y;
-    touch-action: pan-y;
-    -ms-content-zooming: none;
-    overflow: auto;
-    -ms-content-zooming: none;
-}
+
 html,body,div,span,applet,object,iframe,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,label,legend,p,blockquote,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}body{line-height:1;color:black;background:white;}:focus{outline:0;}table{border-collapse:collapse;border-spacing:0;}caption,th,td{text-align:left;font-weight:normal;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}ol,ul{list-style:none;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}blockquote:before,blockquote:after,q:before,q:after{content:"";}blockquote,q{quotes:"" "";}abbr,acronym{border:0;}
 @font-face{
 		font-family: 'yekan';
@@ -54,7 +44,7 @@ ul, menu, dir {
   width: 100%;
     height: 100vh;
     overflow-x: hidden;
-    overflow-y: auto;
+   
     
 }
 
@@ -440,7 +430,7 @@ background: transparent !important;
     margin-top:20px !important;
     width: 95%;
     margin: 0 auto;
-    overflow: auto;
+    overflow-x: hidden;
     direction: rtl;
     height: 80vh;
     padding-bottom: -400px;
@@ -586,7 +576,7 @@ background: transparent !important;
     width: 40%;
     height: auto;
      background: rgba(57, 147, 150, 0.53);
-    overflow: auto;
+    overflow-x: hidden;
     border: 2px solid rgba(57, 147, 150, 0.53);
     text-decoration: none !important;
     margin-top: 4%;
@@ -635,7 +625,7 @@ background: transparent !important;
 	display: table;
 	text-align: center;
 	width:100%;
-    overflow: auto;
+    overflow-x: hidden;
 }
 .setun1{
 	width: 44%;
@@ -732,8 +722,8 @@ direction: rtl !important;
     width: 100%;
     height: auto;
     margin: 0px !important;
-    overflow-y: auto;
-    position: relative;
+   overflow-x: hidden;
+  position: relative;
     top:-50px;
 }    
 .header_l{
@@ -791,7 +781,7 @@ margin-top: 0px !important;
 .gallery_detail {
 	width: 100%;
     margin-top: 80px;
-    overflow: auto;
+    overflow-x: hidden;
 }
 .gallery_detail a img {
     display: inline-block;
@@ -807,7 +797,7 @@ margin-top: 0px !important;
 	margin: 0 2px 2px 0;
 	width:22vw !important;
     height: 22vw;
-    overflow: auto;
+    overflow-x: hidden;
     border:2px solid #aebff2;
     border-radius: 4px;
     overflow: hidden;
