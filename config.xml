@@ -22,7 +22,6 @@
   <preference name="phonegap-version" value="3.7.0" />
   <gap:plugin name="org.apache.cordova.console"/>
   <gap:plugin name="org.apache.cordova.splashscreen"/>
-  <gap:plugin name="org.apache.cordova.network-information"/>
   <feature name="http://api.phonegap.com/1.0/network" />
   
   <icon src="icon.png" />
@@ -101,6 +100,6 @@
 <platform name="wp8">
     <splash src="res/screen/windows-phone/splash.jpg" width="480" height="800"/>
 </platform>
-
+<gap:splash src="res/screen/windows-phone/splash.jpg" gap:platform="winphone" />
   <access origin="*"/>
 </widget>
