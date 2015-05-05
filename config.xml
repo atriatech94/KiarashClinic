@@ -18,11 +18,17 @@
   <preference name="disable-cursor" value="false"/>
   <preference name="android-minSdkVersion" value="7"/>
   <preference name="android-installLocation" value="auto"/>
- <preference name="UIWebViewBounce" value="false" />
- 
+  <preference name="phonegap-version" value="3.5.0" />
   <gap:plugin name="org.apache.cordova.console"/>
   <gap:plugin name="org.apache.cordova.splashscreen"/>
-
+  
+  <gap:config-file platform="winphone" parent="/Deployment" mode="replace">
+<Languages xmlns="">
+        <Language code="fa"/>
+        <Language code="en"/>
+    </Languages>
+    <DefaultLanguage xmlns="" code="fa" />
+</gap:config-file>
   
 
   <icon src="icon.png" />
