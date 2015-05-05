@@ -18,20 +18,12 @@
   <preference name="disable-cursor" value="false"/>
   <preference name="android-minSdkVersion" value="7"/>
   <preference name="android-installLocation" value="auto"/>
- <preference name="UIWebViewBounce" value="false" />
- 
-  <gap:plugin name="org.apache.cordova.console"/>
-  <gap:plugin name="org.apache.cordova.splashscreen"/>
-  
-  <gap:config-file platform="winphone" parent="/Deployment" mode="replace">
-<Languages xmlns="">
-        <Language code="fa"/>
-        <Language code="en"/>
-    </Languages>
-    <DefaultLanguage xmlns="" code="fa" />
-</gap:config-file>
-  
+  <preference name="UIWebViewBounce" value="false" />
 
+   <gap:plugin name="org.apache.cordova.console"/>
+  <gap:plugin name="org.apache.cordova.splashscreen"/>
+  <gap:plugin name="org.apache.cordova.network-information"/>
+  
   <icon src="icon.png" />
   <icon src="res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:qualifier="ldpi"/>
   <icon src="res/icon/android/icon-48-mdpi.png" gap:platform="android" gap:qualifier="mdpi"/>
