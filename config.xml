@@ -19,7 +19,7 @@
   <preference name="android-minSdkVersion" value="7"/>
   <preference name="android-installLocation" value="auto"/>
   <preference name="UIWebViewBounce" value="false" />
-  <preference name="phonegap-version" value="2.9.1" />
+  <preference name="phonegap-version" value="3.7.0" />
    <gap:plugin name="org.apache.cordova.console"/>
   <gap:plugin name="org.apache.cordova.splashscreen"/>
   <gap:plugin name="org.apache.cordova.network-information"/>
