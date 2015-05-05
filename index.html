@@ -1,10 +1,9 @@
 
 <!DOCTYPE html>
-<html lang="en" ng-app="kiarash">
-<head>
+<html lang="en" ng-app="kiarash"><head>
     <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>Kiarash-clinic</title>
+   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+  <title>Kiarash-clinic</title>
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -16,29 +15,9 @@
 <sw-swipe>
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide"><div ng-view></div></div>
-            <div class="swiper-slide">
-                <div class="nav_main">
-                    <div class="logo_menu">
-                        <div id="card"><img src="img/logo-white.png"></div>
-                        <h3>DR.GHASEMI</h3>
-                        <h3> CLINIC</h3>
-                    </div>
-                    <ul class="navbar">
-                        <li id="home"><a href="#/home"  class="active"><i class="fa fa-tachometer"></i>کلینیک دکتر قاسمی</a></li>
-                        <li id="blog"><a href="#/blog"  ><i class="fa fa-newspaper-o"></i>آخرین مطالب</a></li>
-                        <li id="service"><a href="#/service"    ><i class="fa fa-newspaper-o"></i>سرویس های کلینیک</a></li>
-                        <li id="lipomatic"><a href="#/lipomatic"   ><i class="fa fa-sort-numeric-asc"></i>لیپوماتیک</a></li>
-                        <li id="gallery"><a href="#/gallery"    ><i class="fa fa-picture-o"></i>گالری تصاویر</a></li>
-                        <li id=""><a href="#/faq"   ><i class="fa fa-recycle"></i>نکات قبل و بعد عمل</a></li>
-                        <li id="faq"><a href="#/about"    ><i class="fa fa-question"></i>درباره ما</a></li> 
-                        <li id="contact"><a href="#/contact"    ><i class="fa fa-comments"></i>تماس با ما</a></li> 
-                        
-                    </ul>
-                </div>
-            </div>
+            <div class="swiper-slide"><div ng-view></div></div>   
         </div>
-        <!-- Add Pagination -->
+
     </div>
 </sw-swipe>
     
@@ -59,7 +38,6 @@
 <script type="text/javascript" src="js/routes.js"></script>
 <!-------------------------- cointroller ----------------------------------->
 <script src="js/controllers/about-controller.js"></script>
-<script src="js/controllers/contact-Controller.js"></script>
 <script src="js/controllers/faq-Controller.js"></script>
 <script src="js/controllers/gallery-Controller.js"></script>
 <script src="js/controllers/home-Controller.js"></script>

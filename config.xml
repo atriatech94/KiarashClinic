@@ -22,6 +22,15 @@
  
   <gap:plugin name="org.apache.cordova.console"/>
   <gap:plugin name="org.apache.cordova.splashscreen"/>
+  
+  <gap:config-file platform="winphone" parent="/Deployment" mode="replace">
+<Languages xmlns="">
+        <Language code="fa"/>
+        <Language code="en"/>
+    </Languages>
+    <DefaultLanguage xmlns="" code="fa" />
+</gap:config-file>
+  
 
   <icon src="icon.png" />
   <icon src="res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:qualifier="ldpi"/>
