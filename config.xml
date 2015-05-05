@@ -20,8 +20,9 @@
   <preference name="android-installLocation" value="auto"/>
   <preference name="UIWebViewBounce" value="false" />
   <preference name="phonegap-version" value="3.7.0" />
-   <gap:plugin name="org.apache.cordova.console"/>
+  <gap:plugin name="org.apache.cordova.console"/>
   <gap:plugin name="org.apache.cordova.splashscreen"/>
+  <gap:plugin name="org.apache.cordova.network-information"/>
   <feature name="http://api.phonegap.com/1.0/network" />
   
   <icon src="icon.png" />
