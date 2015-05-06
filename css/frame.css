@@ -15,13 +15,14 @@ html,body,div,span,applet,object,iframe,a,abbr,acronym,address,big,cite,code,del
     padding: 1em;
 }
 .content h1{
-    font-size: 20px;
+    font-size: 22px;
     color:#2b5780;
     line-height: 40px;
     
 }
 .content p{
-    font-size: 14px;
+    font-size: 10px !important;
     color:#10212f;
-    line-height: 25px;
+    line-height: 17px;
+	text-align:justify;
 }
