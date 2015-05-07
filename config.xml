@@ -19,7 +19,7 @@
   <preference name="android-minSdkVersion" value="7"/>
   <preference name="android-installLocation" value="auto"/>
  <preference name="UIWebViewBounce" value="false" />
- 
+ <feature name="http://api.phonegap.com/1.0/network" />
   <gap:plugin name="org.apache.cordova.console"/>
   <gap:plugin name="org.apache.cordova.splashscreen"/>
 
@@ -69,17 +69,16 @@
   <icon src="res/icon/windows-phone/icon-48.png" gap:platform="winphone"/>
   <icon src="res/icon/windows-phone/icon-173-tile.png" gap:platform="winphone" gap:role="background"/>
  
- <platform name="android">
-    <!-- you can use any density that exists in the Android project -->
-    <splash src="res/screen/android/splash-land-hdpi.png" density="land-hdpi"/>
-    <splash src="res/screen/android/splash-land-ldpi.png" density="land-ldpi"/>
-    <splash src="res/screen/android/splash-land-mdpi.png" density="land-mdpi"/>
-    <splash src="res/screen/android/splash-land-xhdpi.png" density="land-xhdpi"/>
-    <splash src="res/screen/android/splash-port-hdpi.png" density="port-hdpi"/>
-    <splash src="res/screen/android/splash-port-ldpi.png" density="port-ldpi"/>
-    <splash src="res/screen/android/splash-port-mdpi.png" density="port-mdpi"/>
-    <splash src="res/screen/android/splash-port-xhdpi.png" density="port-xhdpi"/>
-</platform>
+
+    <splash src="res/screen/android/splash-land-hdpi.png" gap:platform="android" density="land-hdpi"/>
+    <splash src="res/screen/android/splash-land-ldpi.png" gap:platform="android" density="land-ldpi"/>
+    <splash src="res/screen/android/splash-land-mdpi.png" gap:platform="android" density="land-mdpi"/>
+    <splash src="res/screen/android/splash-land-xhdpi.png" gap:platform="android" density="land-xhdpi"/>
+    <splash src="res/screen/android/splash-port-hdpi.png" gap:platform="android" density="port-hdpi"/>
+    <splash src="res/screen/android/splash-port-ldpi.png" gap:platform="android" density="port-ldpi"/>
+    <splash src="res/screen/android/splash-port-mdpi.png" gap:platform="android" density="port-mdpi"/>
+    <splash src="res/screen/android/splash-port-xhdpi.png" gap:platform="android" density="port-xhdpi"/>
+
 
   <gap:splash src="res/screen/ios/screen-iphone-portrait.png"          gap:platform="ios"     width="320" height="480" />
   <gap:splash src="res/screen/ios/screen-iphone-portrait-2x.png"       gap:platform="ios"     width="640" height="960" />
