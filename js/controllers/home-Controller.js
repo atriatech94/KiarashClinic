@@ -36,10 +36,17 @@ angular.module('kiarash')
 					 
                    
 				});
+<<<<<<< HEAD
 				
 				 var flags = 0;
                $('body').delegate(".header_page .fir","click",function(){
 		            if(flags==0){swiper2.slideNext(); flags++; }else{swiper2.slidePrev(); flags--;}
+=======
+		var flags = 0;		
+               $('body').delegate(".header_page .fir","click",function(){
+				     
+                if(flags==0){swiper2.slideNext(); flags++; }else{swiper2.slidePrev(); flags--;}
+>>>>>>> origin/master
                 });
 				
 				
