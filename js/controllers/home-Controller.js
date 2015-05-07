@@ -20,11 +20,7 @@ angular.module('kiarash')
 		return {
 			link: function($scope) {
 				
-			    swiper2 = new Swiper('.swiper-container',{
-						   pagination: '.swiper-pagination',
-						   slidesPerView: 'auto',
-						   followFinger : false,      	
-					 });  
+			    
 				  
 				$(window).on('hashchange', function(e){
 					  
@@ -36,17 +32,10 @@ angular.module('kiarash')
 					 
                    
 				});
-<<<<<<< HEAD
-				
-				 var flags = 0;
+				var flags = 0;
                $('body').delegate(".header_page .fir","click",function(){
-		            if(flags==0){swiper2.slideNext(); flags++; }else{swiper2.slidePrev(); flags--;}
-=======
-		var flags = 0;		
-               $('body').delegate(".header_page .fir","click",function(){
-				     
+				      
                 if(flags==0){swiper2.slideNext(); flags++; }else{swiper2.slidePrev(); flags--;}
->>>>>>> origin/master
                 });
 				
 				
