@@ -7,7 +7,6 @@ function amintest(){
     var loc =   window.location.hash;
     loc = loc.replace("#/", "");
 	var res = loc.split("/");
-	
 
     if($.fancybox.isOpen)
 	{
@@ -27,9 +26,9 @@ function amintest(){
 		window.location.hash = "#/gallery";
 		
 	}
-	else if(res[0]="blogdetail")
+	else if(res[0]=="blogdetail")
 	{
-		window.location.hash = "#/blog";
+         window.location.hash = "#/blog";
 	}
     else
     {
