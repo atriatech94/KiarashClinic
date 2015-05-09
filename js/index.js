@@ -1,3 +1,45 @@
+document.addEventListener("backbutton",amintest, false);
+
+function amintest(){
+                        
+    
+    
+    var loc =   window.location.hash;
+    loc = loc.replace("#/", "");
+	var res = loc.split("/");
+	
+
+    if($.fancybox.isOpen)
+	{
+		$.fancybox.close();
+		return false;
+	}
+    if(loc == "home" || loc == "")
+    {
+                                           
+       var r = confirm("آیا برای خروج اطمینان دارید ؟");
+        if (r == true) {
+        navigator.app.exitApp(); 
+       }
+    } 
+	else if(loc == "gallery/2" || loc == "gallery/1" || loc == "gallery/3" || loc == "gallery/4")
+	{
+		window.location.hash = "#/gallery";
+		
+	}
+	else if(res[0]="blogdetail")
+	{
+		window.location.hash = "#/blog";
+	}
+    else
+    {
+	   								
+         window.location.hash = "#/";
+    }
+    return false;
+}
+
+
 
 function onLoad()
  {
@@ -12,19 +54,11 @@ function onDeviceReady(){
 				
 function getDeviceProperty()
 {
-   // var deviceOS  = device.platform;  //fetch the device operating system
-  //  var deviceOSVersion = device.version;  //fetch the device OS version
-   // var  version = deviceOSVersion.split('.');
-   
-    /* if(deviceOS == 'Android' && version[0]=='4' && version[1]=='4') 
-      {return 1 ;}
-      else
-      {return 0 ;} 
-	*/
+  
 }
  function exitFromApp()
 {
-    var r = confirm("Are you sure you want to exit ?");
+    var r = confirm("آیا برای خروج اطمینان دارید ؟");
     if (r == true) {
         navigator.app.exitApp(); 
     } else {
