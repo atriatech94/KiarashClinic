@@ -1,3 +1,4 @@
+is_open= 0;
 angular.module('kiarash')
 .controller('HomeController', function($scope,$rootScope,News) {
 
@@ -20,23 +21,28 @@ angular.module('kiarash')
 		return {
 			link: function($scope) {
 				
-			    
-				  
-				$(window).on('hashchange', function(e){
-					  
-						   swiper2 = new Swiper('.swiper-container',{
-						   pagination: '.swiper-pagination',
-						   slidesPerView: 'auto',
-						   followFinger : false,
-					   });
-					 
-                   
-				});
-				var flags = 0;
-               $('body').delegate(".header_page .fir","click",function(){
-				      
-                if(flags==0){swiper2.slideNext(); flags++; }else{swiper2.slidePrev(); flags--;}
+				 window.addEventListener('load', function() {
+					new FastClick(document.body);
+				}, false);
+			   
+				
+			    var win_height = $(window).height();
+				$('.main_100,.nav_main').height(win_height);
+                $('.content').height((win_height*80)/100);
+                $(window).on("resize",function(){
+                   var win_height = $(window).height();
+				    $('.main_100,.nav_main').height(win_height); 
+                    $('.content').height((win_height*80)/100);
                 });
+                var mySwiper = new Swiper( '.swiper-container' , { slidesPerView: 'auto',  followFinger : false } );
+                
+				$(window).on('hashchange', function(e){
+                    mySwiper.slidePrev();
+                    is_open= 0;
+                    
+                    mySwiper.on('onTransitionStart', function () {if(is_open==0){is_open = 1;}else{is_open=0;}});
+                    $('body').delegate(".fir ","click",function(){ if(is_open==0){mySwiper.slideNext();is_open=1;}else{mySwiper.slidePrev();is_open=0;} });   
+				});
 				
 				
                 /*========================================*/

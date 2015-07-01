@@ -1,8 +1,35 @@
 document.addEventListener("backbutton",amintest, false);
 
+var win_height = $(window).height();
+    console.log($('body').delegate('.main_100,.nav_main').height());
+    ab = (win_height*80)/100;
+    $('#style').append("<style>.main_100,.nav_main{height:"+win_height+"px !important;}.content{height:"+ab+"px !important}</style>");
+    $(window).on("resize",function(){
+        var win_height = $(window).height();
+        $('#style').append("<style>.main_100,.nav_main{height:"+win_height+"px !important;}.content{height:"+ab+"px !important}</style>");
+    });
+$(window).on('hashchange',function(){ 
+    
+    var win_height = $(window).height();
+    console.log($('body').delegate('.main_100,.nav_main').height());
+    ab = (win_height*80)/100;
+    $('#style').append("<style>.main_100,.nav_main{height:"+win_height+"px !important;}.content{height:"+ab+"px !important}</style>");
+    $(window).on("resize",function(){
+        var win_height = $(window).height();
+        $('#style').append("<style>.main_100,.nav_main{height:"+win_height+"px !important;}.content{height:"+ab+"px !important}</style>");
+    });
+    
+    /****************************************/
+       
+    /****************************************/
+    });
 function amintest(){
                         
     
+    
+    /*============================================================*/
+    
+    /*============================================================*/
     
     var loc =   window.location.hash;
     loc = loc.replace("#/", "");

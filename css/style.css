@@ -37,15 +37,13 @@ ul, menu, dir {
 	*/
 }
 .nav_main{
- background-color: #122954;
-  border-color: #1d1d1d;
-  color: #fff;
-  text-shadow: 0 1px 0 #111;
-  width: 100%;
-    height: 100vh;
+    background-color: #122954;
+    border-color: #1d1d1d;
+    color: #fff;
+    text-shadow: 0 1px 0 #111;
+    width: 100%;
     overflow-x: hidden;
     overflow-y: auto;
-    
 }
 
 
@@ -69,6 +67,7 @@ ul, menu, dir {
 /* Content styling. */
 body {
 	font-family: "yekan", tahoma, arial;
+    overflow: hidden;
 }
 dl {
 	font-family: "yekan", tahoma, arial;
@@ -112,7 +111,7 @@ dd {
 /*--=============-- nav  --===================--*/
 
 .home_pgae_ico{
-background: transparent !important;
+    background: transparent !important;
 }
 .home_main{
     display: table;
@@ -432,10 +431,9 @@ background: transparent !important;
     margin: 0 auto;
     overflow: auto;
     direction: rtl;
-    height: 80vh;
-    padding-bottom: -400px;
     padding-top: 50px;
 }
+scr-ll{width: 100% !important;}
 .content h3 {
 	padding-right: 20px;
     line-height: 40px;
@@ -782,7 +780,7 @@ margin-top: 0px !important;
 
 	width: 100%;
 	height:90vh;
-    margin-top: 80px;
+    padding-top: 80px;
     overflow-x: hidden;
 	-webkit-overflow-scrolling: touch;
 }
@@ -791,15 +789,11 @@ margin-top: 0px !important;
     width: 100%;
     height: 100%;
     opacity: 0.85;
-    
-
 }
 .my-simple-gallery figure{
 	display: block;
 	display:inline-block;
 	margin: 0 2px 2px 0;
-	width:22vw !important;
-    height: 22vw;
     overflow-x: hidden;
 	-webkit-overflow-scrolling: touch;
     border:2px solid #aebff2;
@@ -808,7 +802,6 @@ margin-top: 0px !important;
 	
 }
 /*--=============--   --===================--*/
-
 .swiper-container {
 	width: 100%;
 }
@@ -836,7 +829,7 @@ margin-top: 0px !important;
 	-ms-flex-align: center;
 	-webkit-align-items: center;
 	align-items: center;
-    height: 100vh !important;
+    
 }
 /*--=============--  collapsible --===================--*/
 .colapse{

@@ -17,9 +17,10 @@
 </head>
 <body>
 <sw-swipe>
+    <div id="style"></div>
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide"><div ng-view></div></div>
+            <div class="swiper-slide main_100"><scr-ll><div ng-view></div></scr-ll></div>
             <div class="swiper-slide">
                 <div class="nav_main">
                     <div class="logo_menu">
@@ -33,7 +34,8 @@
                         <li id="service"><a href="#/service"    ><i class="fa fa-newspaper-o"></i>سرویس های کلینیک</a></li>
                         <li id="lipomatic"><a href="#/lipomatic"   ><i class="fa fa-sort-numeric-asc"></i>لیپوماتیک</a></li>
                         <li id="gallery"><a href="#/gallery"    ><i class="fa fa-picture-o"></i>گالری تصاویر</a></li>
-                        <li id=""><a href="#/faq"   ><i class="fa fa-recycle"></i>نکات قبل و بعد عمل</a></li>
+                        <li id=""><a href="#/faq"><i class="fa fa-recycle"></i>نکات قبل و بعد عمل</a></li>
+                        <li id=""><a href="#/bmi"><i class="fa fa-user-md"></i>تست BMI</a></li>
                         <li id="faq"><a href="#/about"    ><i class="fa fa-question"></i>درباره ما</a></li> 
                         <li id="contact"><a href="#/contact"    ><i class="fa fa-comments"></i>تماس با ما</a></li> 
                          <li id="contact"><a onClick="exitFromApp()"    ><i class="fa fa-power-off"></i>خروج</a></li> 
@@ -125,9 +127,13 @@
 <script src="js/controllers/blog-Controller.js"></script>
 <script src="js/controllers/blogdetail-Controller.js"></script>
 <script src="js/controllers/gallerydetail-Controller.js"></script>
+<script src="js/controllers/bmi-Controller.js"></script>
 <!------------------------------ cointroller --------------------------------->
 <script src="js/services/news.js"></script>
-<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type='application/javascript' src='js/fastclick.js'></script>
+<script type="text/javascript" src="js/swiper.min.js"></script> 
+<script type="text/javascript" src="js/swiper.jquery.min.js"></script> 
+<script type="text/javascript" src="js/angular-swiper.js"></script> 
 <script type="text/javascript" src="js/fancy/jquery.fancybox.js"></script> 
 <script type="text/javascript" src="js/fancy/helpers/jquery.fancybox-thumbs.js"></script>
 <script type="text/javascript" src="js/angular-swiper.js"></script>

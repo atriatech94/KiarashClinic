@@ -5,6 +5,21 @@ angular.module('kiarash')
 		return {
 			link: function($scope) {
               
+          /*=======================================================*/  
+                var win_vw = $(window).width();
+                var win_vh = $(window).height();
+                 $(".my-simple-gallery figure").width((win_vw*22)/100).height((win_vh*15)/100);
+                 $(".my-simple-gallery").height((win_vh*85)/100);
+                $(window).on("resize",function(){
+                    win_vw = $(window).width();
+                    win_vh = $(window).height();
+                    $(".my-simple-gallery figure").width((win_vw*22)/100).height((win_vh*15)/100);
+                    $(".my-simple-gallery").height((win_vh*85)/100);
+                });
+                //.my-simple-gallery figure
+          /*=======================================================*/      
+                
+                
 		var initPhotoSwipeFromDOM = function(gallerySelector) {
 
 	// parse slide data (url, title, size ...) from DOM elements 

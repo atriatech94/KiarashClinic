@@ -21,6 +21,10 @@ angular.module('kiarash')
 		templateUrl: 'page/about/index.html',
 		 controller: 'AboutController'
 		})
+		.when('/bmi', {
+		templateUrl: 'page/bmi/index.html',
+		 controller: 'BmiController'
+		})
         .when('/contact', {
 		templateUrl: 'page/contact/index.html',
 		 controller: 'ContactController'
